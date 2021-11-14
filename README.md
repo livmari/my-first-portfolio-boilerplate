@@ -8,6 +8,7 @@
 - [x] **[01_css_setup](https://github.com/livmari/my-first-portfolio-boilerplate/tree/01_css_setup):** Installing and configuring the basic requirements for using [TailwindCSS](https://tailwindcss.com/) in the project.
 - [x] **[02_creating_components](https://github.com/livmari/my-first-portfolio-boilerplate/tree/02_creating_components):** Adding components to the project.
 - [x] **03_adding_styles:** Adding CSS and TailwindCSS styles to make things pretty.
+- [ ] **[04_deployment](https://github.com/livmari/my-first-portfolio-boilerplate/tree/04_deployment)**: Publishing the portfolio online.
 
 ### 🔮 Available Scripts
 
