@@ -4,8 +4,9 @@
 
 ### ☑️ Project to do's
 
-- [x] **00_project_setup:** Installing a boilerplate version of React + adding [Prettier](https://prettier.io) for maintaining code style rules.
-- [ ] **[01_css_setup](https://github.com/livmari/my-first-portfolio-boilerplate/tree/01_css_setup):** Install and configure the basic requirements for using [TailwindCSS](https://tailwindcss.com/) in the project.
+- [x] **[00_project_setup](https://github.com/livmari/my-first-portfolio-boilerplate/tree/00_project_setup):** Installing a boilerplate version of React + adding [Prettier](https://prettier.io) for maintaining code style rules.
+- [x] **01_css_setup:** Installing and configuring the basic requirements for using [TailwindCSS](https://tailwindcss.com/) in the project.
+- [ ] **[02_creating_components](https://github.com/livmari/my-first-portfolio-boilerplate/tree/02_creating_components):** Adding components to the project.
 
 ### 🔮 Available Scripts
 
