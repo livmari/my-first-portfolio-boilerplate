@@ -1,0 +1,6 @@
+export { default as Avatar } from './Avatar/Avatar'
+export { default as Blockquote } from './Blockquote/Blockquote'
+export { default as Education } from './Education/Education'
+export { default as PageFooter } from './PageFooter/PageFooter'
+export { default as PageHeader } from './PageHeader/PageHeader'
+export { default as WorkExperience } from './WorkExperience/WorkExperience'
