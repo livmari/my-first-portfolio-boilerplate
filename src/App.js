@@ -2,6 +2,7 @@ import { nanoid } from 'nanoid'
 
 import {
   Blockquote,
+  ContentSection,
   Education,
   PageFooter,
   PageHeader,
@@ -72,28 +73,27 @@ const myRecommendations = [
 
 function App() {
   return (
-    <>
+    <div className={'grid gap-12 md:container md:mx-auto md:max-w-screen-sm'}>
       <PageHeader />
 
-      <section>
-        <h2>Work experience</h2>
+      <ContentSection heading={'Work experience'}>
+        <ul>
+          {myWorkExperience.map(experience => (
+            <li key={nanoid()}>
+              <WorkExperience
+                jobTitle={experience.title}
+                company={experience.company}
+                startYear={experience.startYear}
+                endYear={experience.endYear}
+                location={experience.location}
+                summary={experience.summary}
+              />
+            </li>
+          ))}
+        </ul>
+      </ContentSection>
 
-        {myWorkExperience.map(experience => (
-          <WorkExperience
-            key={nanoid()}
-            jobTitle={experience.title}
-            company={experience.company}
-            startYear={experience.startYear}
-            endYear={experience.endYear}
-            location={experience.location}
-            summary={experience.summary}
-          />
-        ))}
-      </section>
-
-      <section>
-        <h2>Education</h2>
-
+      <ContentSection heading={'Education'}>
         {myDegrees.map(degree => (
           <Education
             key={nanoid()}
@@ -102,18 +102,15 @@ function App() {
             graduationYear={degree.graduationYear}
           />
         ))}
-      </section>
+      </ContentSection>
 
-      <section>
-        <h2>Recommendations</h2>
-
+      <ContentSection heading={'Recommendations'}>
         {myRecommendations.map(reference => (
           <Blockquote quote={reference.quote} cite={reference.cite} />
         ))}
-      </section>
-
+      </ContentSection>
       <PageFooter />
-    </>
+    </div>
   )
 }
 

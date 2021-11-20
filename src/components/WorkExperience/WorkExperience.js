@@ -8,13 +8,13 @@ const WorkExperience = ({
 }) => {
   return (
     <div>
-      <h4>{jobTitle}</h4>
+      <h4 className={'font-medium'}>{jobTitle}</h4>
 
-      <p>
+      <p className={'text-primary-700'}>
         {company} &#124; {startYear} &#45; {endYear} &#124; {location}{' '}
       </p>
 
-      <p>{summary}</p>
+      <small className={'text-primary-800'}>{summary}</small>
     </div>
   )
 }

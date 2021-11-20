@@ -2,26 +2,23 @@ import { Avatar } from '../index'
 
 const PageHeader = () => {
   return (
-    <header>
-      <section>
+    <header className={'py-12 px-6 grid gap-6 justify-items-center'}>
+      <section
+        className={
+          'grid md:grid-cols-2 gap-6 md:gap-8 justify-items-center items-center'
+        }
+      >
         <Avatar imageSrc={'/livmari.png'} />
 
-        <span>
-          <h1>Firstname Lastname</h1>
+        <span className={'text-center md:text-left'}>
+          <h1 className={'mb-4'}>
+            Firstname
+            <br />
+            Lastname
+          </h1>
 
-          <h3>Job title</h3>
+          <h2>Job title</h2>
         </span>
-      </section>
-
-      <section>
-        <h2>Hello world,</h2>
-
-        <p>
-          I'm a ... Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Dignissimos doloremque hic praesentium quidem sed! Aliquid autem
-          consectetur, dignissimos, doloribus ea earum hic id ipsa iure non
-          nulla odio sed, sint!
-        </p>
       </section>
     </header>
   )
